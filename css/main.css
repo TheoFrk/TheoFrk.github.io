@@ -76,23 +76,29 @@ body {
 a {
     text-decoration: none;
 }
-
+#linkJawackenInstagram:hover ~ #linkInfoJawackenInstagram {
+    display:block;
+}
 
 #linkJawackenInstagram a:hover, #linkInfoJawackenInstagram b {
     color: #00f20d;
 }
 
-#linkJawackenInstagram:hover ~ #linkInfoJawackenInstagram {
+
+#linkGithub:hover ~ #linkInfoGithub {
     display:block;
 }
 
-#linkInstagram a:hover, #linkInfoInstagram b {
-    color: #f77737;
+#linkGithub a:hover, #linkInfoGithub b {
+    color: #248cf2;
 }
 
-
-#linkInstagram:hover ~ #linkInfoInstagram {
+#linkWortDesTages:hover ~ #linkInfoWortDesTages {
     display:block;
+}
+
+#linkWortDesTages a:hover, #linkInfoWortDesTages b {
+    color: #f26120;
 }
 
 #impressum {
