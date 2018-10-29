@@ -100,7 +100,9 @@ a {
 #linkWortDesTages a:hover, #linkInfoWortDesTages b {
     color: #f26120;
 }
-
+#ds{
+color: #ff3787
+}
 #impressum {
     width: 1200px;
     height: 900px;
