@@ -1,4 +1,9 @@
-var WortDesTages = 'Doublehyped-Oldies';   //Hier einfügen
+var WortDesTages = 'Doublehyped-Oldies';   //Hier
+var WortDesTagesMorgen = 'Oldies';   //Hier einfügen
+
+
+a = new Date();
+b = a.getMinutes();
 
 function WortDesTagesf() {
     window.open('https://www.wikipedia.org/wiki/' + WortDesTages, '_blank');
