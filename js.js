@@ -1,4 +1,4 @@
-var WortDesTages = 'gedeihen';   //Hier einfügen
+var WortDesTages = 'Doublehyped-Oldies';   //Hier einfügen
 
 function WortDesTagesf() {
     window.open('https://www.wikipedia.org/wiki/' + WortDesTages, '_blank');
