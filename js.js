@@ -1,4 +1,4 @@
-var WortDesTages = 'Spießbürgertum';   //Hier einfügen
+var WortDesTages = 'gedeihen';   //Hier einfügen
 
 function WortDesTagesf() {
     window.open('https://www.wikipedia.org/wiki/' + WortDesTages, '_blank');
