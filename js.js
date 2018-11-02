@@ -1,4 +1,4 @@
-var WortDesTages = 'Mobty DonG Strong';   //Hier
+var WortDesTages = 'Monty DonG Strong';   //Hier
 
 
 function WortDesTagesf() {
