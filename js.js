@@ -1,4 +1,4 @@
-var WortDesTages = 'Dr. Munzinger Sport';   //Hier
+var WortDesTages = 'Mobty DonG Strong';   //Hier
 
 
 function WortDesTagesf() {
