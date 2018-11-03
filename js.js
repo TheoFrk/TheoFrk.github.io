@@ -1,4 +1,4 @@
-var WortDesTages = 'Monty Dong Strong';   //Hier
+var WortDesTages = 'Lügeliese';   //Hier
 
 
 function WortDesTagesf() {
