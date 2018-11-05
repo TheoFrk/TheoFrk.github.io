@@ -1,4 +1,4 @@
-var WortDesTages = 'Lügeliese';   //Hier
+var WortDesTages = 'Zirkelliese';   //Hier
 
 
 function WortDesTagesf() {
