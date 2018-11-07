@@ -1,4 +1,4 @@
-var WortDesTages = 'Zweilochhengst';   //Hier
+var WortDesTages = 'Grünhauseffekt';   //Hier
 
 
 function WortDesTagesf() {
