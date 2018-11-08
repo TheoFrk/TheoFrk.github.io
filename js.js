@@ -1,4 +1,4 @@
-var WortDesTages = 'Grünhauseffekt';   //Hier
+var WortDesTages = 'Heckdeckelschloss Kiekert C139ab002';   //Hier
 
 
 function WortDesTagesf() {
