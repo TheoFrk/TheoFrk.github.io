@@ -1,4 +1,4 @@
-var WortDesTages = 'Heckdeckelschloss Kiekert C139ab002';   //Hier
+var WortDesTages = 'Doublehyped-Oldies';   //Hier
 
 
 function WortDesTagesf() {
