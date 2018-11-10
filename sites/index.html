@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>TheoInside</title>
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link rel="shortcut icon" href="img/favicon.ico">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js.js"></script>
+</head>
+
+<body>
+<div id="bottomMenu">
+    <span id="bottomMenuInner"><a href="mailto:theodor.frank@nexilium.de">KONTAKT</a> | <a href="sites/impressum.html">IMPRESSUM</a> | <a href="sites/Tools.html">TOOLS</a></span>
+</div>
+<div id="main">
+
+    <div id="linkList">
+        <!--<div class="linkButton" id="linkInstagram"><a href="https://www.instagram.com/theo_frk/"><div class="fab fa-instagram fa-5x"></div></a></div>-->
+        <div class="linkButton" id="linkJawackenInstagram"><a href="https://www.instagram.com/jawacken/"><div class="fab fa-instagram fa-5x"></div></a></div>
+        <!--<span class="linkInfo" id="linkInfoInstagram"><b>INSTAGRAM</b>: Mein Insta Account</span>-->
+
+        <div class="linkButton" id="linkGithub"><a href="https://github.com/TheoFrk"><div class="fas fa-code fa-5x"></div></a></div>
+        <div class="linkButton" id="linkWortDesTages"><a onclick="WortDesTagesf()"><div class="fas fa-comment-alt fa-5x"></div></a></div>
+
+        <span class="linkInfo" id="linkInfoJawackenInstagram"><b>INSTAGRAM ESL</b>: Jawacken Instagram Account</span>
+        <span class="linkInfo" id="linkInfoGithub"><b>Github</b>: Mein github account</span>
+        <span class="linkInfo" id="linkInfoWortDesTages"><b>Wort des Tages</b>: Das heutige Wort des Tages ist: <u id="WordDesTages" style="color: #ff7f56"><!--Hier nichts einfügen--></u></span>
+    </div>
+</div>
+
+</body>
+<script>
+    $(function() {
+        var elem = document.getElementById('WordDesTages');
+        elem.innerHTML = WortDesTages;
+    });
+
+</script>
+
+</html>
