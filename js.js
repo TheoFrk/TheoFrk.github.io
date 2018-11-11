@@ -1,4 +1,4 @@
-var WortDesTages = 'Doublehyped-Oldies';   //Hier
+var WortDesTages = 'inflazionär';   //Hier
 
 
 function WortDesTagesf() {
