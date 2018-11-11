@@ -1,4 +1,4 @@
-var WortDesTages = 'inflazionär';   //Hier
+var WortDesTages = 'inflationär';   //Hier
 
 
 function WortDesTagesf() {
