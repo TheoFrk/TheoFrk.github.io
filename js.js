@@ -1,8 +1,8 @@
-var WortDesTages = 'frugal';   //Hier
+var WortDesTages = 'antisowjetische trotzkistische Verschwörergruppe';   //Hier
 
 
 function WortDesTagesf() {
-    window.open('https://www.wikipedia.org/wiki/' + WortDesTages, '_blank');
+    window.open('https://de.wikipedia.org/wiki/' + WortDesTages, '_blank');
 }
 
 function Input() {
