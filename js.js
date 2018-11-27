@@ -1,4 +1,3 @@
-var arg;
 (function($) {
     $.rand = function(arg) {
         console.log(arg.length);
