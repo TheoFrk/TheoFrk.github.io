@@ -15,9 +15,10 @@ var words = ["Galakartoffel","Holzheim","exorbitant","antisowjetische trotzkisti
     "Flüchtlingsfeindliche Angriffe","Peppadew","Würdenbube","Fahrzeugbau","Windfarbgen","Finanzinstrument","Westwallmuseum","Ausübungspreis","Nigerianischer Film","Wahlkreis","Spaltblumen","PBKDF2","Netzschleimpilze",
     "Doublehyped-Oldies","Massensterben","Hungernost","Nahtoterfahrung","Vierfüßig","Kantinenfrass","Vaterkomplexe","Klunker","Lähmende Schulden","Hormonspritzen","Spritzen teilen","AXE Deo","Achselnässe","Kiefersperre","Hodentorsion","Domino's Oreo Dessert Pizze","Smegma","Alkoholismus","Selbsthass","Bibel","Gandhi","Brennen","Judentum","Teenagerschwangerschaft","Kinder an einer Leine","Sonderschulen","Auf Rolex umsteigen","Kamikaze Piloten","RoboCop","Dreistigkeit","Uniformitätsregel","Internat","Pudding",
     "Gefühl","Hefe","Katapult","Karsten Stahl","Genghis Kan","Zwergenwerfen","Selbstjustiz","sturzfluten","Lepra","Ethnische Säuberung","Erektile Dysfunktion","Spießbürgertum","Tischtennis","Multimediale Veranstaltung","Haargel","Weiß","Zentaure","Freiwillige Vergewaltigung","Fabelhaft Sein","Spitze","Schwarz","Frühstücksdöner","Nierenstein","Stichwunden","Hundebabies","Vorzeigeminderheit","Verebungslehre","Urknall","Jogurtwerbespot","amisch",
-    "Angst","Milchmann","absolutismus"];
-
-var WortDesTages = $.rand(words);//'Doublehyped-Oldies';
+    "Angst","Milchmann","absolutismus","Soldat","Apache","Knorke","1A","Top","Top keck","Klick Klack Peng","Astrein","Dampfwalze","Klemmhülse","Stehbunker","Ölbadluftfilter","Lästerschwester","Trantüte","Krimskrams","Rasselbande","Spitzbub","Baumwolle","MP3-Player","Walkman","Walkie-Talkie","Lenksäule THYSSEN KRUPP PRESTA","Döner","Lederhose","Zut!",
+    "Kuk Kuk!","Lyon","La Reunion","Kaffee","Keine Ahnung!","Green","Pirat","Vuvuzela","Ukulele","Kazoo",
+    "Warnweste","Offiziersmesser","Tschernobyler Vieraugen-Königsbarsch","CNC Fräßmaschiene","Fotobuch","ESL","MLG","Soulpride","Lord Of The Weeds","Klappsäge","Monty Don","Noah","Worthing"];
+var WortDesTages = $.rand(words);//'Doublehyped-Oldies';   //Hier
 console.log(WortDesTages);
 
 function WortDesTagesf() {
