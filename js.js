@@ -10,7 +10,7 @@ var arg;
         }
     };
 })(jQuery);
-console.log(arg.length);
+console.log("Aktuell gibt es " + arg.length + "Wörter");
 
 var words = ["Galakartoffel","Holzheim","exorbitant","antisowjetische trotzkistische Verschwörergruppe","Fleisch","alkoholisch","Sanskrit","Jawacken","Kunstrasenbewegung","Luftseite","Briefmarken-Jahrgang","Frauenwappen","Kreuzschaft","DER feminismus","Tropfsteinhöhle","Restmandat","TT353","Tirhut","326. Infanterie-Division","Grenzübergang","Kampfgruppe 88","Alter jüdischer Friedhof","Grabschändung","Golconda Road","Extragalaktisches Hintergrundlicht","Pubertät","Unangebrachtes Jodeln","Amphetamine","Skalpierung","Inzest","Obdachlose","Potwahle","Mundherpes","Gott","Hulk Hogan",
     "Flüchtlingsfeindliche Angriffe","Peppadew","Würdenbube","Fahrzeugbau","Windfarbgen","Finanzinstrument","Westwallmuseum","Ausübungspreis","Nigerianischer Film","Wahlkreis","Spaltblumen","PBKDF2","Netzschleimpilze",
