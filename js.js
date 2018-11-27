@@ -1,6 +1,6 @@
+var arg;
 (function($) {
-    $.rand = function(arg) {
-        console.log(arg.length);
+    $.rand = function(arg) {    
         if ($.isArray(arg)) {
             return arg[$.rand(arg.length)];
         } else if (typeof arg == "number") {
@@ -10,6 +10,7 @@
         }
     };
 })(jQuery);
+console.log(arg.length);
 
 var words = ["Galakartoffel","Holzheim","exorbitant","antisowjetische trotzkistische Verschwörergruppe","Fleisch","alkoholisch","Sanskrit","Jawacken","Kunstrasenbewegung","Luftseite","Briefmarken-Jahrgang","Frauenwappen","Kreuzschaft","DER feminismus","Tropfsteinhöhle","Restmandat","TT353","Tirhut","326. Infanterie-Division","Grenzübergang","Kampfgruppe 88","Alter jüdischer Friedhof","Grabschändung","Golconda Road","Extragalaktisches Hintergrundlicht","Pubertät","Unangebrachtes Jodeln","Amphetamine","Skalpierung","Inzest","Obdachlose","Potwahle","Mundherpes","Gott","Hulk Hogan",
     "Flüchtlingsfeindliche Angriffe","Peppadew","Würdenbube","Fahrzeugbau","Windfarbgen","Finanzinstrument","Westwallmuseum","Ausübungspreis","Nigerianischer Film","Wahlkreis","Spaltblumen","PBKDF2","Netzschleimpilze",
