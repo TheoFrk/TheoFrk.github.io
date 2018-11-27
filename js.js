@@ -1,6 +1,7 @@
 var arg;
 (function($) {
-    $.rand = function(arg) {    
+    $.rand = function(arg) {
+        console.log(arg.length);
         if ($.isArray(arg)) {
             return arg[$.rand(arg.length)];
         } else if (typeof arg == "number") {
@@ -10,7 +11,7 @@ var arg;
         }
     };
 })(jQuery);
-console.log(arg.length);
+
 var words = ["Galakartoffel","Holzheim","exorbitant","antisowjetische trotzkistische Verschwörergruppe","Fleisch","alkoholisch","Sanskrit","Jawacken","Kunstrasenbewegung","Luftseite","Briefmarken-Jahrgang","Frauenwappen","Kreuzschaft","DER feminismus","Tropfsteinhöhle","Restmandat","TT353","Tirhut","326. Infanterie-Division","Grenzübergang","Kampfgruppe 88","Alter jüdischer Friedhof","Grabschändung","Golconda Road","Extragalaktisches Hintergrundlicht","Pubertät","Unangebrachtes Jodeln","Amphetamine","Skalpierung","Inzest","Obdachlose","Potwahle","Mundherpes","Gott","Hulk Hogan",
     "Flüchtlingsfeindliche Angriffe","Peppadew","Würdenbube","Fahrzeugbau","Windfarbgen","Finanzinstrument","Westwallmuseum","Ausübungspreis","Nigerianischer Film","Wahlkreis","Spaltblumen","PBKDF2","Netzschleimpilze",
     "Doublehyped-Oldies","Massensterben","Hungernost","Nahtoterfahrung","Vierfüßig","Kantinenfrass","Vaterkomplexe","Klunker","Lähmende Schulden","Hormonspritzen","Spritzen teilen","AXE Deo","Achselnässe","Kiefersperre","Hodentorsion","Domino's Oreo Dessert Pizze","Smegma","Alkoholismus","Selbsthass","Bibel","Gandhi","Brennen","Judentum","Teenagerschwangerschaft","Kinder an einer Leine","Sonderschulen","Auf Rolex umsteigen","Kamikaze Piloten","RoboCop","Dreistigkeit","Uniformitätsregel","Internat","Pudding",
