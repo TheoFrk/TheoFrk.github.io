@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Highlighter.html</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/obsidian.min.css">
+    <link rel="stylesheet" href="background.css">
+    <style>
+        footer.bar{
+            position: absolute;
+            bottom: 0;
+            height: 10em;
+            width: 100%;
+            background-color: #FFFFFF; /*#0a4fff-blue*/
+            color: #000000;
+        }
+
+        #footerbar1 {
+            position:fixed;
+            bottom: 0;
+            width: 100%;
+            height: 2em;
+        }
+
+        .container {
+            padding: auto;
+        }
+
+        textarea.code {
+            width: 300px;
+            height: 150px;
+        }
+
+        .center1 {
+            position: absolute;
+            left: 50%;
+            top: 35%;
+            -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+        }
+    </style>
+</head>
+<body class="background1">
+
+<div class="center1" id="codeshow1">  <!--language-css-->
+    <pre id="lang" class="css">
+        <code id="showncode" style="border-radius: 10px; font-size: 45px; resize: both; overflow: auto;">pre[class*="language-css"] {
+	background: #272822;
+    }
+</code></pre>
+</div>
+
+<div class="footerbar1" id="footerbar1" style="left:0%; font-family: Arial">
+
+    <footer class="bar">
+        <div class="container">
+            <div style="float: left;">
+               <h3>FontSize: <div id="size">75</div></h3>
+                    <input id="size1" type="range" min="5" max="160" value="75">
+            </div>
+                <div style="float: right;"><div>Code:</div>
+                    <textarea class="code" wrap="hard" oninput="codecopy(), reload()" id="code" name="code" placeholder="Copy Code in Here" style="width: 600px"> </textarea>
+                </div>
+
+            <div style="float: left; width: 50%">
+            <select id="listlang" onchange="getSelectValue();">
+                <option value="css">CSS</option>
+                <option value="javascript">JavaScript</option>
+                <option value="html">HTML</option>
+                <option value="java">Java</option>
+                <option value="autoit">AutoIT</option>
+                <option value="glsl">GLSL</option>
+                <!--Hier sprachen einfügen     verfügbare Spachen auf: https://highlightjs.org/download/-->
+            </select>
+
+                <select id="listback" onchange="backgroundchange()">
+                    <option value="background1">Standart</option>
+                    <option value="background2">SexyBlue</option>
+                    <option value="background3">Cherry</option>
+                    <option value="background4">SexyBlue2</option>
+                    <option value="background5">PurpleLove</option>
+                    <option value="background6">Almost</option>
+                    <!--Hier Backgrounds einfügen-->
+                </select>
+        <button onclick="hidefooter()" class="center" >HIDE(F7)</button>
+                <button onclick="reload()" class="center" >Reload(F8)</button>
+        <button onclick="print()" class="center" >Print</button>
+        </div>
+        </div>
+    </footer>
+        </div>
+
+</body>
+<script>
+    hljs.initHighlightingOnLoad();
+
+    document.body.onkeydown = function(event)       /*F7 for hidefooter*/
+    {
+        event = event || window.event;
+        var keycode = event.charCode || event.keyCode;
+        if(keycode === 118)
+        {
+            hidefooter();
+        }
+        if(keycode === 119)                        /*F8 for reload*/
+        {
+            reload();
+        }
+    };
+
+
+
+    $('#size1').on('change', function () {
+        var v = $(this).val();
+        $('code').css('font-size', v + 'px');
+        $('#size').html(v);
+    });
+
+    function codecopy(){
+        var code = document.getElementById('code').value;
+        var elem = document.getElementById('showncode');
+        elem.innerHTML = code;
+        document.querySelectorAll("code").forEach(function(element) {
+            element.innerHTML = element.innerHTML.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;").replace(/'/g, "&#039;");
+        });
+    reload()}
+
+    function reload(){
+        hljs.highlightBlock($('code').get(0));
+       }
+
+    function hidefooter() {
+        var x = document.getElementById("footerbar1");
+        var y = document.getElementById("codeshow1");
+        if (x.style.display === "none") {
+            x.style.display = "block";
+            y.style.top= "35%";
+        } else {
+            x.style.display = "none";
+            y.style.top= "50%";
+            /*"Press F7 to escape Fullscreen");*/
+        }}
+
+
+    function getSelectValue() {
+        $('#lang').attr('class', '');
+            var selectedValue = document.getElementById("listlang").value;
+        $('pre').removeClass();
+        $('pre').addClass(selectedValue);
+        reload();
+    }
+
+    function backgroundchange() {
+        $('#lang').attr('class', '');
+        var selectedValue = document.getElementById("listback").value;
+        $('body').removeClass();
+        $('body').addClass(selectedValue);
+        reload();
+    }
+</script>
+</html>

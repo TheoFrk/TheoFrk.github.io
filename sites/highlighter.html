@@ -6,8 +6,8 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/obsidian.min.css">
-    <link rel="stylesheet" href="background.css">
     <style>
         footer.bar{
             position: absolute;
@@ -29,6 +29,19 @@
             padding: auto;
         }
 
+
+        body{
+            width: 500px;
+            background: rgba(190,100,129,1);
+            background: -moz-linear-gradient(45deg, rgba(190,100,129,1) 0%, rgba(162,91,190,1) 29%, rgba(97,109,189,1) 100%);
+            background: -webkit-linear-gradient(45deg, rgba(190,100,129,1) 0%, rgba(162,91,190,1) 29%, rgba(97,109,189,1) 100%);
+            background: -o-linear-gradient(45deg, rgba(190,100,129,1) 0%, rgba(162,91,190,1) 29%, rgba(97,109,189,1) 100%);
+            background: -ms-linear-gradient(45deg, rgba(190,100,129,1) 0%, rgba(162,91,190,1) 29%, rgba(97,109,189,1) 100%);
+            background: linear-gradient(45deg, rgba(190,100,129,1) 0%, rgba(162,91,190,1) 29%, rgba(97,109,189,1) 100%);
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#be6481', endColorstr='#616dbd', GradientType=1 );
+        }
+
+
         textarea.code {
             width: 300px;
             height: 150px;
@@ -41,80 +54,44 @@
             -webkit-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
         }
+
     </style>
 </head>
-<body class="background1">
+<body>
 
 <div class="center1" id="codeshow1">  <!--language-css-->
-    <pre id="lang" class="css">
-        <code id="showncode" style="border-radius: 10px; font-size: 45px; resize: both; overflow: auto;">pre[class*="language-css"] {
+    <pre id="lang" class="css"><code id="showncode" style="border-radius: 10px; font-size: 45px;  resize: both; overflow: auto;">pre[class*="language-css"] {
 	background: #272822;
     }
 </code></pre>
 </div>
 
-<div class="footerbar1" id="footerbar1" style="left:0%; font-family: Arial">
+
+<div id="footerbar1" style="left:0%; font-family: Arial">
+
     <footer class="bar">
         <div class="container">
-            <div class="row">
-                <div class="col-sm-4">
-                    <div class="container">
-                        <div style="float: left; padding-left: 30px;">
-                            <h3>FontSize: <div id="size">45</div></h3>
-                            <input id="size1" type="range" min="5" max="160" value="45">
-                            <input id="size2" type="number" value="45">
-                        </div>
+            <div style="float: left;">
+               <h3>FontSize: <div id="size">75</div></h3>
+                    <input id="size1" type="range" min="5" max="160" value="75">
+            </div>
+                <div style="float: right;"><div>Code:</div>
+                    <textarea class="code" wrap="hard" oninput="codecopy(), reload()" id="code" name="code" placeholder="Copy Code in Here" style="width: 600px"> </textarea>
                 </div>
 
-                <div class="col-sm-4"><div style="float: right; padding-right: 30px;"><div>Code:</div>
-                    <textarea class="code" wrap="hard" oninput="codecopy(), reload()" id="code" name="code" placeholder="Copy Code in Here" style="width: 900px"> </textarea>
-                </div></div>
-
-                <div class="col-sm-4"> <div style="float: left; width: 50%">
-                    <select id="listlang" onchange="getSelectValue();">
-                        <option value="css">CSS</option>
-                        <option value="javascript">JavaScript</option>
-                        <option value="html">HTML</option>
-                        <option value="php">PHP</option>
-                        <option value="java">Java</option>
-                        <option value="c++">C++</option>
-                        <option value="python">Python</option>
-                        <option value="sql">SQL</option>
-                        <option value="autoit">AutoIT</option>
-                        <option value="glsl">GLSL</option>
-                        <!--Hier sprachen einfügen     verfügbare Spachen auf: https://highlightjs.org/download/-->
-                        </select>
-
-                            <select id="listback" onchange="backgroundchange()">
-                                <option value="background1">Standart</option>
-                                <option value="background2">Light Azure</option>
-                                <option value="background3">Heavy Azure</option>
-                                <option value="background4">Cherry</option>
-                                <option value="background5">PurpleLove</option>
-                                <option value="background6">Almost</option>
-                                <option value="background7">Dusty Grass</option>
-                                <option value="background8">Tempting Azure</option>
-                                <option value="background9">Malibu Beach</option>
-                                <option value="background10">New Life</option>
-                                <option value="background11">Morpheus Den</option>
-                                <option value="background12">Deep Blue</option>
-                                <option value="background13">Sharp Blues</option>
-                                <option value="background14">Sky Glider</option>
-                                <option value="background15">Heaven Peach</option>
-                                <option value="background16">Aqua Splash</option>
-                                <option value="background17">Palo Alto</option>
-                                <option value="background18">Party Bliss</option>
-                                <option value="background19">Hidden Jaguar</option>
-                                <option value="background20">Magic Lake</option>
-                                <!--Hier Backgrounds einfügen-->
-                        </select>
-
-                  <button onclick="hidefooter()" class="center" >HIDE(F7)</button>
-                          <button onclick="reload()" class="center" >Reload(F8)</button>
-                  <button onclick="print()" class="center" >Print</button>
-                  </div></div>
-                      </div>
-                  </div>
+            <div style="float: left; width: 50%">
+            <select id="list" onchange="getSelectValue();">
+                <option value="css">CSS</option>
+                <option value="javascript">JavaScript</option>
+                <option value="html">HTML</option>
+                <option value="java">Java</option>
+                <option value="autoit">AutoIT</option>
+                <option value="glsl">GLSL</option>
+                <!--Hier sprachen einfügen     verfügbare Spachen auf: https://highlightjs.org/download/-->
+            </select>
+        <button onclick="hidefooter()" class="center" >HIDE</button>
+        <button onclick="print()" class="center" >Print</button>
+        </div>
         </div>
     </footer>
         </div>
@@ -123,7 +100,7 @@
 <script>
     hljs.initHighlightingOnLoad();
 
-    document.body.onkeydown = function(event)       /*F7 for hidefooter*/
+    document.body.onkeydown = function(event)       /*F7 drücken*/
     {
         event = event || window.event;
         var keycode = event.charCode || event.keyCode;
@@ -131,28 +108,13 @@
         {
             hidefooter();
         }
-        if(keycode === 119)                        /*F8 for reload*/
-        {
-            reload();
-        }
     };
 
     $('#size1').on('change', function () {
         var v = $(this).val();
         $('code').css('font-size', v + 'px');
         $('#size').html(v);
-        $('#size2').val(v);
     });
-
-    $('#size2').on('change', function () {
-        var v = $(this).val();
-        $('code').css('font-size', v + 'px');
-        $('#size').html(v);
-        $('#size1').val(v);
-    });
-
-
-
 
     function codecopy(){
         var code = document.getElementById('code').value;
@@ -161,13 +123,11 @@
         document.querySelectorAll("code").forEach(function(element) {
             element.innerHTML = element.innerHTML.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;").replace(/'/g, "&#039;");
         });
-    reload()
-        hljs.highlightBlock($('code').get(0));
-    }
+    reload()}
 
     function reload(){
-        hljs.highlightBlock($('code').get(0));
 
+        hljs.highlightBlock($('code').get(0));
        }
 
     function hidefooter() {
@@ -185,19 +145,10 @@
 
     function getSelectValue() {
         $('#lang').attr('class', '');
-            var selectedValue = document.getElementById("listlang").value;
-        $('pre').removeClass();
-        $('pre').addClass(selectedValue);
-        reload();
-        hljs.highlightBlock($('code').get(0));
-    }
-
-    function backgroundchange() {
-        $('#lang').attr('class', '');
-        var selectedValue = document.getElementById("listback").value;
-        $('body').removeClass();
-        $('body').addClass(selectedValue);
+            var selectedValue = document.getElementById("list").value;
+        $( "pre" ).toggleClass( selectedValue );
         reload();
     }
 </script>
+
 </html>
