@@ -1,5 +1,6 @@
 (function($) {
     $.rand = function(arg) {
+        console.log(arg.length);
         if ($.isArray(arg)) {
             return arg[$.rand(arg.length)];
         } else if (typeof arg == "number") {
@@ -15,9 +16,9 @@ var words = ["Galakartoffel","Holzheim","exorbitant","antisowjetische trotzkisti
     "Doublehyped-Oldies","Massensterben","Hungernost","Nahtoterfahrung","Vierfüßig","Kantinenfrass","Vaterkomplexe","Klunker","Lähmende Schulden","Hormonspritzen","Spritzen teilen","AXE Deo","Achselnässe","Kiefersperre","Hodentorsion","Domino's Oreo Dessert Pizze","Smegma","Alkoholismus","Selbsthass","Bibel","Gandhi","Brennen","Judentum","Teenagerschwangerschaft","Kinder an einer Leine","Sonderschulen","Auf Rolex umsteigen","Kamikaze Piloten","RoboCop","Dreistigkeit","Uniformitätsregel","Internat","Pudding",
     "Gefühl","Hefe","Katapult","Karsten Stahl","Genghis Kan","Zwergenwerfen","Selbstjustiz","sturzfluten","Lepra","Ethnische Säuberung","Erektile Dysfunktion","Spießbürgertum","Tischtennis","Multimediale Veranstaltung","Haargel","Weiß","Zentaure","Freiwillige Vergewaltigung","Fabelhaft Sein","Spitze","Schwarz","Frühstücksdöner","Nierenstein","Stichwunden","Hundebabies","Vorzeigeminderheit","Verebungslehre","Urknall","Jogurtwerbespot","amisch",
     "Angst","Milchmann","absolutismus"];
-console.log($.rand(words));
+
 var WortDesTages = $.rand(words);//'Doublehyped-Oldies';   //Hier
 
 function WortDesTagesf() {
-    window.open('https://www.wikipedia.org/wiki/' + WortDesTages, '_blank');
+    window.open('https://de.wikipedia.org/wiki/' + WortDesTages, '_blank');
 }
