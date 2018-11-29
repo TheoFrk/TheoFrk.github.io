@@ -17,7 +17,8 @@ var words = ["Galakartoffel","Holzheim","exorbitant","antisowjetische trotzkisti
     "Gefühl","Hefe","Katapult","Karsten Stahl","Genghis Kan","Zwergenwerfen","Selbstjustiz","sturzfluten","Lepra","Ethnische Säuberung","Erektile Dysfunktion","Spießbürgertum","Tischtennis","Multimediale Veranstaltung","Haargel","Weiß","Zentaure","Freiwillige Vergewaltigung","Fabelhaft Sein","Spitze","Schwarz","Frühstücksdöner","Nierenstein","Stichwunden","Hundebabies","Vorzeigeminderheit","Verebungslehre","Urknall","Jogurtwerbespot","amisch",
     "Angst","Milchmann","absolutismus","Soldat","Apache","Knorke","1A","Top","Top keck","Klick Klack Peng","Astrein","Dampfwalze","Klemmhülse","Stehbunker","Ölbadluftfilter","Lästerschwester","Trantüte","Krimskrams","Rasselbande","Spitzbub","Baumwolle","MP3-Player","Walkman","Walkie-Talkie","Lenksäule THYSSEN KRUPP PRESTA","Döner","Lederhose","Zut!",
     "Kuk Kuk!","Lyon","La Reunion","Kaffee","Keine Ahnung!","Green","Pirat","Vuvuzela","Ukulele","Kazoo",
-    "Warnweste","Offiziersmesser","Tschernobyler Vieraugen-Königsbarsch","CNC Fräßmaschiene","Fotobuch","ESL","MLG","Soulpride","Lord Of The Weeds","Klappsäge","Monty Don","Noah","Worthing"];
+    "Warnweste","Offiziersmesser","Tschernobyler Vieraugen-Königsbarsch","CNC Fräßmaschiene","Fotobuch","ESL","MLG","Soulpride","Lord Of The Weeds","Klappsäge","Monty Don","Noah","Worthing",
+            "Fancy Faktor"];
 var WortDesTages = $.rand(words);//'Doublehyped-Oldies';   //Hier
 console.log(WortDesTages);
 
