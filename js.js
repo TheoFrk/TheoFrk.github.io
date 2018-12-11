@@ -18,7 +18,7 @@ var words = ["Galakartoffel","Holzheim","exorbitant","antisowjetische trotzkisti
     "Angst","Milchmann","absolutismus","Soldat","Apache","Knorke","1A","Top","Top keck","Klick Klack Peng","Astrein","Dampfwalze","Klemmhülse","Stehbunker","Ölbadluftfilter","Lästerschwester","Trantüte","Krimskrams","Rasselbande","Spitzbub","Baumwolle","MP3-Player","Walkman","Walkie-Talkie","Lenksäule THYSSEN KRUPP PRESTA","Döner","Lederhose","Zut!",
     "Kuk Kuk!","Lyon","Merkantilismus","Monty","Thüringer Klöße","La Reunion","Kaffee","Keine Ahnung!","Chinchilla","Chillinho","Pirat","Vuvuzela","Ukulele","Kazoo",
     "Warnweste","Offiziersmesser","Tschernobyler Vieraugen-Königsbarsch","CNC Fräßmaschiene","Fotobuch","ESL","MLG","Soulpride","Lord Of The Weeds","Klappsäge","Monty Don","Noah","Worthing",
-            "Fancy Faktor"];
+    "Fancy Faktor","Hegelianismus","Helfersyndrom","Flankeneruption","Fischbandwurm"];
 var WortDesTages = $.rand(words);//'Doublehyped-Oldies';   //Hier
 console.log(WortDesTages);
 
