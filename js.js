@@ -19,7 +19,7 @@ var words = ["Galakartoffel","Holzheim","exorbitant","antisowjetische trotzkisti
     "Kuk Kuk!","Lyon","Merkantilismus","Monty","Thüringer Klöße","La Reunion","Kaffee","Keine Ahnung!","Chinchilla","Chillinho","Pirat","Vuvuzela","Ukulele","Kazoo",
     "Warnweste","Offiziersmesser","Tschernobyler Vieraugen-Königsbarsch","CNC Fräßmaschiene","Fotobuch","ESL","MLG","Soulpride","Lord Of The Weeds","Klappsäge","Monty Don","Noah","Worthing",
     "Fancy Faktor","Hegelianismus","Helfersyndrom","Flankeneruption","Fischbandwurm","Hufauskratzer","Salzlecksteinhalter","Christoffel","Schwuppe","Peitsche"]
-     "];
+;
 var WortDesTages = $.rand(words);//'Doublehyped-Oldies';   //Hier
 console.log(WortDesTages);
 
