@@ -43,7 +43,7 @@
         }
     </style>
 </head>
-<body class="background1">
+<body class="background1" style=" background-color: #FFFFFF;">
 
 <div class="center1" id="codeshow1">  <!--language-css-->
     <pre id="lang" class="css">
@@ -70,7 +70,8 @@
                     <textarea class="code" wrap="hard" oninput="codecopy(), reload()" id="code" name="code" placeholder="Copy Code in Here" style="width: 900px"> </textarea>
                 </div></div>
 
-                <div class="col-sm-4"> <div style="float: left; width: 50%">
+                <div class="col-sm-4">
+                    Lang:
                     <select id="listlang" onchange="getSelectValue();">
                         <option value="css">CSS</option>
                         <option value="javascript">JavaScript</option>
@@ -85,6 +86,7 @@
                         <!--Hier sprachen einfügen     verfügbare Spachen auf: https://highlightjs.org/download/-->
                         </select>
 
+                    Background:
                             <select id="listback" onchange="backgroundchange()">
                                 <option value="background1">Standart</option>
                                 <option value="background2">Light Azure</option>
@@ -112,9 +114,10 @@
 
                                 <!--Hier Backgrounds einfügen-->
                         </select>
+                    Own Backgroundcolor: <input type="color" id="own_background_solidcolor" onchange="backgroundchange_own_solid()">
 
                   <button onclick="hidefooter()" class="center" >HIDE(F7)</button>
-                          <button onclick="reload()" class="center" >Reload(F8)</button>
+                    <button onclick="reload()" class="center" >Reload(F8)</button>
                   <button onclick="print()" class="center" >Print</button>
                   </div></div>
                       </div>
@@ -155,9 +158,6 @@
         $('#size1').val(v);
     });
 
-
-
-
     function codecopy(){
         var code = document.getElementById('code').value;
         var elem = document.getElementById('showncode');
@@ -171,7 +171,6 @@
 
     function reload(){
         hljs.highlightBlock($('code').get(0));
-
        }
 
     function hidefooter() {
@@ -196,11 +195,21 @@
         hljs.highlightBlock($('code').get(0));
     }
 
+    function backgroundchange_own_solid() {
+        $('#lang').attr('class', '');
+        var ownSolidColor = document.getElementById("own_background_solidcolor").value;
+        console.log(ownSolidColor);
+        $('body').removeClass();
+        $('body').css('background-color', ownSolidColor);
+        reload();
+    }
+
     function backgroundchange() {
         $('#lang').attr('class', '');
         var selectedValue = document.getElementById("listback").value;
         $('body').removeClass();
         $('body').addClass(selectedValue);
+        $('body').css('background-color', "");
         reload();
     }
 </script>
