@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/obsidian.min.css">
     <link rel="stylesheet" href="../css/obsidian.css">
     <link rel="stylesheet" href="../css/background.css">
+
     <style>
         footer.bar{
             position: absolute;
@@ -19,13 +20,14 @@
             color: #000000;
         }
 
-
-
         #footerbar1 {
             position:fixed;
             bottom: 0;
-            width: 100%;
+            width: 80%;
             height: 2em;
+            margin-left:10%;
+            margin-right:10%;
+            margin-bottom: 1%;
         }
 
         .container {
@@ -113,7 +115,7 @@
     <footer class="bar">
         <div class="container">
             <div class="row">
-                <div class="col-sm-4">
+                <div class="col-sm-2">
                     <div class="container">
                         <div style="float: left; padding-left: 30px;">
                             <h3>FontSize: <div id="size">45</div></h3>
@@ -122,8 +124,8 @@
                         </div>
                 </div>
 
-                <div class="col-sm-4"><div style="float: right; padding-right: 30px;"><div>Code:</div>
-                    <textarea class="code" wrap="hard" oninput="codecopy(), reload()" id="code" name="code" placeholder="Copy Code in Here" style="width: 900px"> </textarea>
+                <div class="col-sm-6"><div style="float: right; padding-right: 30px;"><div>Code:</div>
+                    <textarea class="code" wrap="hard" oninput="codecopy(), reload()" id="code" name="code" placeholder="Copy Code in Here" style="width: 100%; height: auto"> </textarea>
                 </div></div>
 
                 <div class="col-sm-4">
@@ -142,7 +144,7 @@
                         <!--Hier sprachen einfügen     verfügbare Spachen auf: https://highlightjs.org/download/-->
                         </select>
 
-                    Background:
+                   <br> Background:
                             <select id="listback" onchange="backgroundchange()">
                                 <option value="background1">Standart</option>
                                 <option value="background2">Light Azure</option>
@@ -170,16 +172,15 @@
 
                                 <!--Hier Backgrounds einfügen-->
                         </select>
-                    Own Backgroundcolor: <input type="color" id="own_background_solidcolor" onchange="backgroundchange_own_solid()">
 
-                  <button onclick="hidefooter()" class="center" >HIDE(F7)</button>
-                    <button onclick="reload()" class="center" >Reload(F8)</button>
-                  <button onclick="print()" class="center" >Print</button>
+                <br><br><button onclick="hidefooter()" class="center" >HIDE(F7)</button>
+                 <br>   <button onclick="reload()" class="center" >Reload(F8)</button>
+                  <br><button onclick="print()" class="center" >Print</button>
                   </div></div>
                       </div>
                   </div>
-        </div>
     </footer>
+        </div>
         </div>
 
 </body>

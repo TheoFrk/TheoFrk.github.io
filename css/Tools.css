@@ -26,17 +26,17 @@ body, html {
 
 }
 .bgimg-1 {
-    background-image: url("../img/blurry_code.png");
+    background-image: url("");
     min-height: 100%;
 }
 
 .bgimg-2 {
-    background-image: url("../img/highlighter.png");
+    background-image: url("");
     min-height: 400px;
 }
 
 .bgimg-3 {
-    background-image: url("../img/blurry_code2.png");
+    background-image: url("");
     min-height: 400px;
 }
 
@@ -54,7 +54,9 @@ body, html {
     color: #fff;
     padding: 18px;
     font-size: 25px;
-    letter-spacing: 10px;
+    letter-spacing: 5px;
+    border-radius: 5px;
+
 }
 
 h3 {
